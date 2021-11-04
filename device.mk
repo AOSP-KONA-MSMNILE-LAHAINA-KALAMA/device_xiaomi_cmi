@@ -163,6 +163,7 @@ PRODUCT_PACKAGES += \
 -include hardware/qcom-caf/sm8250/display/config/display-product.mk
 include vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk
 include vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk
+include vendor/qcom/opensource/commonsys/display/display-product-commonsys.mk
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -423,3 +424,10 @@ PRODUCT_PACKAGES += \
 
 #PRODUCT_BOOT_JARS += \
 #    WfdCommon
+
+TARGET_COMMON_QTI_COMPONENTS := \
+    av \
+    overlay \
+    perf \
+    telephony \
+    wfd
