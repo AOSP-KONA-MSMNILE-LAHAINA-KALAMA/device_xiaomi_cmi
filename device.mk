@@ -154,12 +154,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# Display
--include hardware/qcom-caf/sm8250/display/config/display-board.mk
--include hardware/qcom-caf/sm8250/display/config/display-product.mk
-include vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk
-include vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
@@ -325,6 +319,7 @@ PRODUCT_COPY_FILES += \
 # QTI-Components
 TARGET_BOARD_PLATFORM := kona
 TARGET_COMMON_QTI_COMPONENTS := \
+    display \
     perf \
     telephony
 
