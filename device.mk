@@ -325,7 +325,8 @@ PRODUCT_COPY_FILES += \
 # QTI-Components
 TARGET_BOARD_PLATFORM := kona
 TARGET_COMMON_QTI_COMPONENTS := \
-    perf
+    perf \
+    telephony
 
 # RenderScript
 PRODUCT_PACKAGES += \
