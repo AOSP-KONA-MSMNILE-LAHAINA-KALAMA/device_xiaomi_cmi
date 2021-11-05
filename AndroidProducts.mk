@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_cmi.mk
+    $(LOCAL_DIR)/p404_cmi.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_cmi-eng \
-    aosp_cmi-user \
-    aosp_cmi-userdebug
+    p404_cmi-eng \
+    p404_cmi-user \
+    p404_cmi-userdebug

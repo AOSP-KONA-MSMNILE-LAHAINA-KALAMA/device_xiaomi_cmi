@@ -1,3 +1,6 @@
-hal_attribute_lineage(mlipay)
-
-hal_attribute_lineage(touchfeature)
+attribute hal_mlipay;
+attribute hal_mlipay_client;
+attribute hal_mlipay_server;
+attribute hal_touchfeature;
+attribute hal_touchfeature_client;
+attribute hal_touchfeature_server;
