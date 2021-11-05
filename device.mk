@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 Project 404
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -258,7 +259,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pe
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-404
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
