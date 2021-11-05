@@ -306,7 +306,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     display \
     nq-nfc \
     perf \
-    telephony
+    telephony \
+    wfd
 
 # RenderScript
 PRODUCT_PACKAGES += \
