@@ -24,8 +24,8 @@ $(call inherit-product, device/xiaomi/cmi/device.mk)
 # Inherit from the 404 configuration.
 $(call inherit-product, vendor/404/configs/common.mk)
 
-$(call inherit-product, vendor/google/pixel/config.mk)
-$(call inherit-product, vendor/google/gms/config.mk)
+# Inherit GAPPS
+$(call inherit-product, vendor/google/gms/products/gms.mk)
 
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
