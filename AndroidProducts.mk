@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_cmi.mk
+    $(LOCAL_DIR)/arrow_cmi.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_cmi-eng \
-    aosp_cmi-user \
-    aosp_cmi-userdebug
+    arrow_cmi-eng \
+    arrow_cmi-user \
+    arrow_cmi-userdebug
