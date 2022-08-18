@@ -324,7 +324,7 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge
 
 # Shipping API
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Telephony
 PRODUCT_PACKAGES += \
