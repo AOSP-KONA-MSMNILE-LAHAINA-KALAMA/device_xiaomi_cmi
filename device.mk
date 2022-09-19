@@ -161,7 +161,7 @@ include vendor/qcom/opensource/commonsys-intf/display/config/display-product-sys
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.3-service.clearkey
+    android.hardware.drm-service.clearkey
 
 # Fastboot
 PRODUCT_PACKAGES += \
