@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/cmi/device.mk)
 # Inherit from the Lineage configuration.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, vendor/xiaomi/cmi-miuicamera/products/miuicamera.mk)
+
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
