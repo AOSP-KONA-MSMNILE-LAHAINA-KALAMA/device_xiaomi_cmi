@@ -776,8 +776,8 @@ vendor/lib64/libllvm-glnext.so|1c76e8d9a07dd4a317fea206854618df97bec9aa
 vendor/lib64/libllvm-qcom.so|e4ff6f0d3cd3823fa65768b935adfe878a4bda7a
 
 # Graphics (Vulkan) - from LA.UM.9.12.r1-14100-SMxx50.0
-vendor/lib/hw/vulkan.adreno.so|3c9aaf80e21610def254a2b0866ddf4da9222016
-vendor/lib64/hw/vulkan.adreno.so|bcc2dba212dc14dedef1ce76d99422fba93e032d
+vendor/lib/hw/vulkan.adreno.so|b8968241a9e6dc41c681f2365ff97d2fcabe079e
+vendor/lib64/hw/vulkan.adreno.so|bb4a404e1bb27d38f5fda38363b9bc93fa28e6d4
 
 # Hotword Enrollment - from MIUI V13.0.4.0.SJBMIXM
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|1f9513ba807bced528203f829eb9a8249e915d38
@@ -917,30 +917,48 @@ vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
-# Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libperfioctl.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libmeters.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libperfioctl.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
+# Perf - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|3495a1e61a35fe3f03134712ac1407e132b5aacd
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
+vendor/etc/perf/commonsysnodesconfigs.xml|77ea36edec83f67f5c5591f36bd0f75e361db097
+vendor/etc/perf/perfboostsconfig.xml|905f1a3b060e6a6f8509e2a356a9d6abfb18b29f
+vendor/etc/perf/perfconfigstore.xml|cb7dc88156dca524812238165eed2365eabf5b3e
+vendor/etc/perf/targetconfig.xml|e257a9782c8548d371c79bf224bcecdd8074eb9e
+vendor/etc/perf/targetresourceconfigs.xml|7be09ffdc8b1108b6df6673fcf5004ec7366ec88
+vendor/etc/powerhint.xml|026d5a9414ce5e34ef257306ca8fdea682f126b4
+vendor/lib/libperfconfig.so|510466519cd2e3aaf5a6cc6aefef9f68eeac9e6c
+vendor/lib/libperfgluelayer.so|dd61ea16be569c6a13adb1f6abb7fe54374a0374
+vendor/lib/libperfioctl.so|fcc14060de57a16c15f621679624e9845dda0fdb
+vendor/lib/libqti-perfd-client.so|9ed27413af304b261fc64f4326375d7427866d7d
+vendor/lib/libqti-perfd.so|e06d7e7ad62059692c4a68d4afb95cbff02b428d
+vendor/lib/libqti-util.so|560bc0793438df2b74b127a31929ed95b2b90a40
+vendor/lib/libqti-utils.so|b2b9b4af5a3f85bc60de1285742f06625913ac74
+vendor/lib/vendor.qti.hardware.perf@2.0.so|8ba746d19309eb243c2773e0f7412e2432812107
+vendor/lib/vendor.qti.hardware.perf@2.1.so|4da0df31225d236a65f420dd8f57239aa721ff30
+vendor/lib/vendor.qti.hardware.perf@2.2.so|fd58d0e7b573d81c8bda6a438ad6bc98914f55dd
+vendor/lib64/liblearningmodule.so|d111e22bc33026dc459302c6b8dbea7e2cefd524
+vendor/lib64/libmeters.so|62dabee0626894ff2fc86e5aff374803f57094aa
+vendor/lib64/libperfconfig.so|31c2fdd9ac89d30a67ee2cca91d090aaa9e3b56f
+vendor/lib64/libperfgluelayer.so|3e0a6f94e2c7869c133cb5bf309f6c5d2cfc54ca
+vendor/lib64/libperfioctl.so|f549443c16df6df58357c35566ec33ec4e1d394f
+vendor/lib64/libqti-perfd-client.so|a331e5e792a00f1902665b4dd4e7536ded652853
+vendor/lib64/libqti-perfd.so|a5088dd8ce0e55bf1e55bc4c8bc65ad1ef5c28b1
+vendor/lib64/libqti-util.so|2579b7fd8a246ea9ba69aac117867913d989f69b
+vendor/lib64/libqti-utils.so|cb9a0298b12cf8eb6660a0da214c3478fe58b8e8
+vendor/lib64/libskewknob.so|c12129701f5282b3d3bc44b83f7935a4e5eb1a7c
+vendor/lib64/vendor.qti.hardware.perf@2.0.so|5a436c9f05e2ac46efb6bf67462d19b4be2c5c3b
+vendor/lib64/vendor.qti.hardware.perf@2.1.so|8f20180a55e0a693e8e9054934bc2a9ea45b9b30
+vendor/lib64/vendor.qti.hardware.perf@2.2.so|75d574754a42e22017e485b137b64a9e13589214
+
+# Perf LM - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
+vendor/etc/lm/AdaptLaunchFeature.xml|8ae6bcaa5ffc9be775b83814d09e41286e7894ba
+vendor/etc/lm/AppClassifierFeature.xml|ae52a9a4c9e765f02ef71a17b348dab7a98f7a71
+vendor/etc/lm/GameOptimizationFeature.xml|022aff2da0a6cb241d87314bd19062de94544ba0
+vendor/lib64/libadaptlaunch.so|24faea413ecf3053178cb771bd6a3670193ced96
+vendor/lib64/libappclassifier.so|0f29372bc719717629196de115843c9a208c8f28
+vendor/lib64/libgameoptfeature.so|65b140a8795c0c77afb4a0359ad30caf79141077
+vendor/lib64/libmeters-ns.so|a4f9b0e8a5af97c48081bdfe875c732d7ff675c9
 
 # Peripheral manager
 vendor/bin/pm-proxy
