@@ -796,8 +796,6 @@ vendor/lib64/libqti-iopd-client.so
 vendor/lib64/libqti-iopd.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
 
 # IPA Firmware
 vendor/firmware/ipa_fws.b00
@@ -920,7 +918,18 @@ vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
-# Perf System - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+# Pasrhal - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+-vendor/app/pasrservice/pasrservice.apk|38dec995caf51b42550fded391b31f62f974d621
+vendor/bin/hw/vendor.qti.memory.pasrmanager@1.0-service|7cc40e613dff04728db3a6a7302f535a92da055e
+vendor/etc/init/vendor.qti.memory.pasrmanager@1.0-service.rc|0392c66c185676fe4405e170338c8222f223b825
+-vendor/etc/vintf/manifest/vendor.qti.memory.pasrmanager@1.0-service.xml|7df963e6444be110b2b3896847dd57fd8558996f
+vendor/lib64/hw/vendor.qti.memory.pasrmanager@1.0-impl.so|a73a547e31becec3c76e1565f63bd4618aa09d73
+vendor/lib64/libpasrutils.so|8bd702eff22083a4186c1417556cf9c3d3295c3a
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|fc3c761b2654b83a4216eadf8dc8698540b2de1f
+vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|db794e0ba79fd310a8427cbcae03be05008c429f
+vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|6b5a8ca7b57e6515882dab290028c766b7bbaa41
+
+# Perf System - from LA.QSSI.13.0.r1-06400-qssi.0
 system/etc/permissions/com.qualcomm.qti.Performance.xml|7976f2fd46b8d07814310cc957a70f829bdd6932
 system/etc/permissions/com.qualcomm.qti.UxPerformance.xml|d92749d80c5d956db8251b08ea6388d3f107a32c
 -system/framework/QXPerformance.jar|89cd0fa9a53b0a9edde578da91f14faaf4d4e5ee
