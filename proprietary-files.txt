@@ -789,6 +789,7 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be4
 -vendor/app/IFAAService/IFAAService.apk
 
 # IOP
+system_ext/lib64/vendor.qti.hardware.iop@2.0.so
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
 vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
 vendor/lib64/libqti-iopd-client.so
@@ -827,6 +828,8 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
 # Limits HAL
+system_ext/lib64/vendor.qti.hardware.limits@1.0.so
+system_ext/lib64/vendor.qti.hardware.limits@1.1.so
 vendor/bin/hw/vendor.qti.hardware.limits@1.0-service
 vendor/etc/init/vendor.qti.hardware.limits@1.0-service.rc
 -vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml
@@ -916,6 +919,41 @@ vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
+
+# Perf System - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+system/etc/permissions/com.qualcomm.qti.Performance.xml|7976f2fd46b8d07814310cc957a70f829bdd6932
+system/etc/permissions/com.qualcomm.qti.UxPerformance.xml|d92749d80c5d956db8251b08ea6388d3f107a32c
+-system/framework/QXPerformance.jar|89cd0fa9a53b0a9edde578da91f14faaf4d4e5ee
+-system/framework/QPerformance.jar|c0f2334e5f071509f1151cc34793507cf395b1dc
+-system/framework/UxPerformance.jar|14540e6c926a80f09f4ae972633cb740d5d9a75f
+system_ext/app/PerformanceMode/PerformanceMode.apk|584042f8c751f49b2804dbdfeb35a53e491e2ace
+system_ext/app/PowerSaveMode/PowerSaveMode.apk|6a3d78292ed289e9178cf050ac3849a866b1097b
+system_ext/app/workloadclassifier/workloadclassifier.apk|64c1a88caf928b9032573dad01bae51758c19c2c
+system_ext/bin/perfservice|f3207f6254bfe4bd1e15b13578d1007efe1c442c
+system_ext/bin/qspmsvc|711bbb8645bfdcde5327b5e84d0fc8d011d85695
+system_ext/etc/init/perfservice.rc|7d4732437d2204e06ea09db85f169fef693086e8
+system_ext/etc/init/qspmsvc.rc|40675ff5020244a5615d7440c0eca5c2d18a8153
+system_ext/etc/perf/wlc_model.tflite|83cf4df067bc14c78f31943f32bcaf6f32419125
+system_ext/etc/seccomp_policy/perfservice.policy|b877504f5d3203c4ce94e58395034de8232fca3a
+system_ext/lib64/libbeluga.so|33f120552803a75b2528ab9b152282411fc63f49
+system_ext/lib64/libcomposerextn.qti.so|60c53400149f6ca908e1c4027e4b94a697094f62
+system_ext/lib64/libdolphin.so|e50dddf29e9f5e42faa3f48129bda0d332c1bbf2
+system_ext/lib64/liblayerext.qti.so|dd962c4d6d84bc5654403dada0ab0c74a2442c29
+system_ext/lib64/libpenguin_impl.so|bc67218435d2d1f9b1955179442e1dfaae9333ef
+system_ext/lib64/libpenguin.so|049a5759fa199c59eaebb3fbb26f7a3c68bcc077
+system_ext/lib64/libqape.qti.so|8341b9f70e968d8a807e78a38e29e04f03dbaae8
+system_ext/lib64/libqspmsvc.so|6bae295761eac9ad9ce1cde695c87bdeea114dbe
+system_ext/lib64/libqti-at.so|e02764881c2bf5619b0085e7d17a53936a855c97
+system_ext/lib64/libqti-iopd-client_system.so|28b7875a88079936f424dd6b689684824a393d21
+system_ext/lib64/libqti-perfd-client_system.so|c71dd366b4d9862c45b09b07a7284d3978e2fcda
+system_ext/lib64/libqti_performance.so|75bd1dd444b4ec45c6b937a008af15e5b6dcf99d
+system_ext/lib64/libqti_workloadclassifiermodel.so|7b662666df50b354a0e1090ef7d73ba1d22eb452
+system_ext/lib64/libskewknob_system.so|f826557e1994bbac32a32fe845576c6d2d06572d
+system_ext/lib64/libsmomoconfig.qti.so|f42636b48b93a2bcfbb97d85065473e022115752
+system_ext/lib64/vendor.qti.hardware.perf@2.0.so|856a5576f2976cbabf920dc7990c97e73ee9c28b
+system_ext/lib64/vendor.qti.hardware.perf@2.1.so|2f40ceaf1e48b20b7d158ebb2410e945eae8fa68
+system_ext/lib64/vendor.qti.hardware.perf@2.2.so|74a24b1858bdd057d55255e8a429d0674ca40333
+system_ext/lib64/vendor.qti.hardware.perf@2.3.so|21ed41571e6e7d3a91cddc4b076284cfe3b5ff69
 
 # Perf - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|d7dc9aa34d48ed62f469a89bb84554cbc72f44aa
