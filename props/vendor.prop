@@ -137,7 +137,10 @@ ro.vendor.use_data_netmgrd=true
 vendor.pasr.activemode.enabled=true
 
 # Perf
+ro.vendor.perf-hal.ver=2.2
 ro.vendor.extension_library=libqti-perfd-client.so
+vendor.power.pasr.enabled=true
+ro.vendor.qspm.enable=true
 
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
