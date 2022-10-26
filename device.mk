@@ -334,6 +334,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
 
+# Servicetracker
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.2.vendor
+
 # Shims
 PRODUCT_PACKAGES += \
     lib-watermarkshim
@@ -365,6 +369,7 @@ PRODUCT_BOOT_JARS += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti \
+    android.hardware.thermal@2.0 \
     android.hardware.thermal@2.0.vendor
 
 # Touchscreen

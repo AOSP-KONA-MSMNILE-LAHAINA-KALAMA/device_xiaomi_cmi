@@ -1387,6 +1387,12 @@ vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sns_reg_config
 vendor/etc/elliptic_sensor.xml
 
+# Servicetracker - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
+vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
+-vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
+vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
+
 # Snapdragon Computer Vision Engine
 vendor/lib/libfastcvdsp_stub.so
 -vendor/lib/libfastcvopt.so
