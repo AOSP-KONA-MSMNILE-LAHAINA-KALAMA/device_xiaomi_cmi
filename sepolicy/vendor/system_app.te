@@ -9,3 +9,6 @@ allow system_app sysfs_zram:file { open read getattr };
 allow system_app zygote:unix_stream_socket { getopt };
 
 r_dir_file(system_app, vendor_sysfs_battery_supply)
+
+# Aware
+get_prop(system_app, vendor_aware_available_prop);
