@@ -18,4 +18,3 @@ ro.cust.test                    u:object_r:exported_system_prop:s0
 ro.miui.                        u:object_r:exported_system_prop:s0
 ro.fota.oem                     u:object_r:exported_system_prop:s0
 ro.carrier.name                 u:object_r:exported_system_prop:s0
-ro.vendor.oem.sno               u:object_r:exported_system_prop:s0
