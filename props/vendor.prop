@@ -83,6 +83,7 @@ ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Display
+debug.gralloc.enable_fb_ubwc=1
 ro.vendor.display.sensortype=2
 vendor.display.use_layer_ext=1
 
