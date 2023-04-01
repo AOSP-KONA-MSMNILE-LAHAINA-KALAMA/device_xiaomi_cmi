@@ -4,6 +4,9 @@ vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
 # Charger
 ro.charger.enable_suspend=1
 
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 debug.gralloc.gfx_ubwc_disable=0
 debug.sf.enable_hwc_vds=1
