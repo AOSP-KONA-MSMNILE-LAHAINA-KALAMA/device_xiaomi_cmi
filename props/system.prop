@@ -7,6 +7,9 @@ vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
 # Charger
 ro.charger.enable_suspend=1
 
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 persist.vendor.color.matrix=2
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
