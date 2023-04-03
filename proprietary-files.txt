@@ -183,6 +183,9 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
+# Camera - from MIUI v13.0.6
+vendor/lib64/libmialgoengine.so|c712504cc361893d2bfc3944850cc8229548a2d0
+
 # Camera
 vendor/lib64/camera/com.qti.actuator.cmi_sunny_ultra_dw9800.so
 vendor/lib64/camera/com.qti.eeprom.cmi_ofilm_s5k3t2_gt24p64.so
@@ -271,7 +274,6 @@ vendor/lib64/libipebpsstriping.so
 vendor/lib64/libmegface.so
 vendor/lib64/libMegviiFacepp-0.5.2.so
 vendor/lib64/libMIAIHDRhvx_interface.so
-vendor/lib64/libmialgoengine.so
 vendor/lib64/libmialgo_ie_capture.so
 vendor/lib64/libmialgo_ie_preview.so
 vendor/lib64/libmialgo_image_colourkeeping.so
