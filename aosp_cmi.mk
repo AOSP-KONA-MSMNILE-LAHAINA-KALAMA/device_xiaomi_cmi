@@ -20,8 +20,14 @@ $(call inherit-product-if-exists, vendor/xiaomi/cmi-miuicamera/products/miuicame
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_SUPPORTS_QUICK_TAP := true
+
+# Next-Gen Assistant
+PRODUCT_PACKAGES += \
+    NgaResources
+
+PRODUCT_PACKAGES += \
+    nga
 
 PRODUCT_NAME := aosp_cmi
 PRODUCT_DEVICE := cmi
