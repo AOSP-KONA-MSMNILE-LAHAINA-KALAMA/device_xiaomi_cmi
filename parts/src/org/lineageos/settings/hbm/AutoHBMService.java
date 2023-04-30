@@ -17,6 +17,8 @@ import androidx.preference.PreferenceManager;
 import android.provider.Settings;
 
 import org.lineageos.settings.utils.FileUtils;
+import org.lineageos.settings.display.*;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -32,6 +34,7 @@ public class AutoHBMService extends Service {
     Sensor mLightSensor;
 
     private SharedPreferences mSharedPrefs;
+    private boolean dcDimmingEnabled;
 
     public void activateLightSensorRead() {
         submit(() -> {
@@ -74,7 +77,7 @@ public class AutoHBMService extends Service {
             boolean keyguardShowing = km.inKeyguardRestrictedInputMode();
             float threshold = Float.parseFloat(mSharedPrefs.getString(HBMFragment.KEY_AUTO_HBM_THRESHOLD, "20000"));
             if (lux > threshold) {
-                if ((!mAutoHBMActive | !isCurrentlyEnabled()) && !keyguardShowing) {
+                if ((!mAutoHBMActive | !isCurrentlyEnabled()) && !keyguardShowing && !dcDimmingEnabled) {
                     mAutoHBMActive = true;
                     enableHBM(true);
                 }
