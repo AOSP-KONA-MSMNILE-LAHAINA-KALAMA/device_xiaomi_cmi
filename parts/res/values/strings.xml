@@ -81,4 +81,9 @@
     <string name="auto_hbm_threshold_summary">threshold (lux)</string>
     <string name="hbm_mode_warning">Long time usage of High brightness mode may damage your display</string>
 
+    <!-- DC dimming settings -->
+    <string name="dc_dimming_enable_title">DC Dimming</string>
+    <string name="dc_dimming_enable_summary">Reduces eye strain in low light conditions</string>
+    <string name="dc_dimming_enable_summary_not_supported">DC Dimming is currently not supported by the kernel</string>
+
 </resources>
