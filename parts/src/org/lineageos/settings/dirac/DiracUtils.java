@@ -17,8 +17,9 @@
 package org.lineageos.settings.dirac;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.media.AudioManager;
-
+import android.preference.PreferenceManager;
 
 public final class DiracUtils {
 
@@ -31,6 +32,11 @@ public final class DiracUtils {
             mContext = context;
             mDiracSound = new DiracSound(0, 0);
             mInitialized = true;
+
+            // Restore selected scene
+            SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+            String scene = sharedPrefs.getString(DiracSettingsFragment.PREF_SCENARIO, "0" /* None */);
+            setScenario(Integer.parseInt(scene));
         }
     }
 
