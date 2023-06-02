@@ -16,6 +16,7 @@ import android.os.PowerManager;
 import androidx.preference.PreferenceManager;
 import android.provider.Settings;
 
+import org.lineageos.settings.utils.DisplayUtils;
 import org.lineageos.settings.utils.FileUtils;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

@@ -31,6 +31,7 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
 import androidx.preference.TwoStatePreference;
 
+import org.lineageos.settings.utils.DisplayUtils;
 import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.R;
 
@@ -69,7 +70,7 @@ public class HBMFragment extends PreferenceFragment
             Boolean enabled = (Boolean) newValue;
             SharedPreferences.Editor prefChange = PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
             prefChange.putBoolean(KEY_AUTO_HBM_SWITCH, enabled).commit();
-            FileUtils.enableService(getContext());
+            DisplayUtils.enableService(getContext());
             return true;
            }
 
