@@ -31,11 +31,6 @@
             android:title="@string/auto_hbm_title"
             android:summary="@string/auto_hbm_summary" />
 
-        <org.lineageos.settings.hbm.AutoHBMThresholdPreference
-            android:key="auto_hbm_threshold"
-            android:title="@string/auto_hbm_threshold_title"
-            android:summary="@string/auto_hbm_threshold_summary" />
-
         <Preference
             android:icon="@drawable/ic_info_outline"
             android:summary="@string/hbm_mode_warning" 
