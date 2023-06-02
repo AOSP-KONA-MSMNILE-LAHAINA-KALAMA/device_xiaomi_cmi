@@ -24,6 +24,8 @@ import java.util.concurrent.Future;
 public class AutoHBMService extends Service {
     private static final String HBM = "/sys/class/drm/card0/card0-DSI-1/disp_param";
     private static final String BACKLIGHT = "/sys/class/backlight/panel0-backlight/brightness";
+    private static final float HBM_THRESHOLD = 2000.0f; // 2000 lux
+    private static final int DELAY_MILLIS = 7000; // 7 seconds
 
     private static boolean mAutoHBMActive = false;
     private ExecutorService mExecutorService;
@@ -63,8 +65,6 @@ public class AutoHBMService extends Service {
         return FileUtils.getFileValueAsBoolean(HBM, false);
     }
 
-    private static final int DELAY_MILLIS = 7000; // 7 seconds
-
     private SensorEventListener mSensorEventListener = new SensorEventListener() {
         @Override
         public void onSensorChanged(SensorEvent event) {
@@ -72,7 +72,7 @@ public class AutoHBMService extends Service {
             KeyguardManager km =
                 (KeyguardManager) getSystemService(getApplicationContext().KEYGUARD_SERVICE);
             boolean keyguardShowing = km.inKeyguardRestrictedInputMode();
-            float threshold = Float.parseFloat(mSharedPrefs.getString(HBMFragment.KEY_AUTO_HBM_THRESHOLD, "20000"));
+            float threshold = HBM_THRESHOLD;
             if (lux > threshold) {
                 if ((!mAutoHBMActive | !isCurrentlyEnabled()) && !keyguardShowing) {
                     mAutoHBMActive = true;
