@@ -24,6 +24,7 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceManager;
 
+import org.lineageos.settings.utils.DisplayUtils;
 import org.lineageos.settings.utils.FileUtils;
 
 public class HBMModeSwitch implements OnPreferenceChangeListener {
@@ -53,7 +54,7 @@ public class HBMModeSwitch implements OnPreferenceChangeListener {
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         Boolean enabled = (Boolean) newValue;
         FileUtils.writeLine(getHBM(), enabled ? "0x10000" : "0xF0000");
-        if (enabled) {
+        if (enabled && DisplayUtils.isAutoBrightnessEnabled(mContext.getContentResolver())) {
             FileUtils.writeLine(getBACKLIGHT(), "2047");
             Settings.System.putInt(mContext.getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, 255);
         }

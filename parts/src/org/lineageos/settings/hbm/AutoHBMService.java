@@ -54,8 +54,10 @@ public class AutoHBMService extends Service {
     private void enableHBM(boolean enable) {
         if (enable) {
             FileUtils.writeLine(HBM, "0x10000");
-            FileUtils.writeLine(BACKLIGHT, "2047");
-            Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, 255);
+            if (DisplayUtils.isAutoBrightnessEnabled(getContentResolver())) {
+                FileUtils.writeLine(BACKLIGHT, "2047");
+                Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, 255);
+            }
         } else {
             FileUtils.writeLine(HBM, "0xF0000");
         }
