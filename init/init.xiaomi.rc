@@ -85,3 +85,10 @@ service vendor.nv_mac /vendor/bin/nv_mac
 
 on property:persist.vendor.sys.fp.fod.large_field=1
     write sys/bus/i2c/devices/3-0049/fod_area 1
+
+on property:vendor.post_boot.parsed=1
+    # IRQ Tuning
+    # IRQ 70: msm_drm0
+    # IRQ 222: kgsl_3d0_irq
+    write /proc/irq/70/smp_affinity_list 2
+    write /proc/irq/222/smp_affinity_list 1
