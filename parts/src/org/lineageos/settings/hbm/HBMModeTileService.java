@@ -29,10 +29,13 @@ import android.service.quicksettings.TileService;
 import androidx.preference.PreferenceManager;
 import android.provider.Settings;
 
+import org.lineageos.settings.utils.DisplayUtils;
 import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.display.*;
 
 public class HBMModeTileService extends TileService {
+
+    private Context montext;
 
     private static final String HBM = "/sys/class/drm/card0/card0-DSI-1/disp_param";
     private static final String HBM_KEY = "hbm";
@@ -90,7 +93,7 @@ public class HBMModeTileService extends TileService {
         }
         final boolean enabled = !(sharedPrefs.getBoolean(HBM_KEY, false));
         FileUtils.writeLine(HBM, enabled ? "0x10000" : "0xF0000");
-        if (enabled) {
+        if (enabled && DisplayUtils.isAutoBrightnessEnabled(getContentResolver())) {
             FileUtils.writeLine(BACKLIGHT, "2047");
             Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, 255);
         }
