@@ -21,6 +21,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/cmi-miuicamera/products/miuicame
 TARGET_BOOT_ANIMATION_RES := 1080
 
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT = true
 
 # Next-Gen Assistant
 PRODUCT_PACKAGES += \
