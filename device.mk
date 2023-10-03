@@ -319,6 +319,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+# PowerShare
+PRODUCT_PACKAGES += \
+    vendor.lineage.powershare@1.0-service.cmi
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson
