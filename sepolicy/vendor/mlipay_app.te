@@ -8,6 +8,9 @@ binder_call(mlipay_app, vendor_hal_soter_qti)
 # Add hwservice related rules
 allow mlipay_app vendor_hal_soter_hwservice:hwservice_manager find;
 allow mlipay_app hal_mlipay_hwservice:hwservice_manager find;
+allow mlipay_app game_service:service_manager { find };
+allow mlipay_app netstats_service:service_manager { find };
+allow mlipay_app content_capture_service:service_manager { find };
 
 # Allow interaction with activity_service
 allow mlipay_app activity_service:service_manager find;

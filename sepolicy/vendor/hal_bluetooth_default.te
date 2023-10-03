@@ -4,5 +4,5 @@ allow hal_bluetooth_default vendor_ramdump_vendor_data_file:file create_file_per
 
 # Allow Bluetooth hal to search vendor_wifi_vendor_data_file
 allow hal_bluetooth_default vendor_wifi_vendor_data_file:dir { search read write };
-allow hal_bluetooth_default vendor_bt_data_file:dir { search };
+allow hal_bluetooth_default vendor_bt_data_file:dir { search write };
 allow hal_bluetooth_default vendor_diag_device:chr_file { read write };
