@@ -599,6 +599,9 @@ vendor/etc/ltm_config_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/mdss_dsi_j2_p2_1_38_0c_0a_dsc_cmd_mi.xml
 vendor/etc/qdcm_calib_data_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.xml
 
+# Display Config
+product/etc/displayconfig/display_id_4630947134992368257.xml:vendor/etc/displayconfig/display_id_4630947134992368257.xml
+
 # Display-Hardware - from LA.UM.9.12.r1-15100-SMxx50.QSSI13.0
 vendor/lib64/libdisp-aba.so|894b0fe1ace5effb471ebb7437cd590a096e47d8
 vendor/lib64/libdisplayqos.so|15701f18257c43be5657bbd867a8acf1f469e373
