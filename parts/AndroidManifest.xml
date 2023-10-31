@@ -105,5 +105,10 @@
             </intent-filter>
         </service>
 
+        <service
+            android:name=".pocketservice.PocketService"
+            android:permission="PocketService">
+        </service>
+
     </application>
 </manifest>
