@@ -29,6 +29,7 @@ import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.utils.DisplayUtils;
 import org.lineageos.settings.utils.FileUtils;
+import org.lineageos.settings.pocketservice.PocketService;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -46,6 +47,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         DiracUtils.initialize(context);
         DozeUtils.checkDozeService(context);
         DisplayUtils.enableService(context);
+        PocketService.startService(context);
 
         boolean dcDimmingEnabled = sharedPrefs.getBoolean(DC_DIMMING_ENABLE_KEY, false);
         FileUtils.writeLine(DC_DIMMING_NODE, dcDimmingEnabled ? "1" : "0");
