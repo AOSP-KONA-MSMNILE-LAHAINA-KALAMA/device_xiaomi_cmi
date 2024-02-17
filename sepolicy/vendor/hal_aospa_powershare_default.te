@@ -1,0 +1,2 @@
+allow hal_aospa_powershare_default vendor_sysfs_battery_supply:dir { search };
+allow hal_aospa_powershare_default vendor_sysfs_battery_supply:file { open read write getattr };

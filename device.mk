@@ -223,6 +223,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+# PowerShare
+PRODUCT_PACKAGES += \
+    vendor.aospa.powershare-service
+
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
