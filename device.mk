@@ -237,7 +237,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     overlay \
     perf \
     telephony \
-    usb
+    usb \
+    wlan
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -278,15 +279,10 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi-service \
-    hostapd \
     libwifi-hal-ctrl \
-    libwifi-hal-qcom \
     libwpa_client \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.2.vendor \
-    wpa_supplicant \
-    wpa_supplicant.conf
+    vendor.qti.hardware.wifi.supplicant@2.2.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wlan/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
