@@ -168,14 +168,12 @@ ro.soc.model=SM8250
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # USB
-vendor.usb.diag.func.name=diag
+persist.vendor.usb.config=mtp,adb
 vendor.usb.dpl.inst.name=dpl
-vendor.usb.qdss.inst.name=qdss
 vendor.usb.rmnet.func.name=gsi
 vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
 vendor.usb.use_ffs_mtp=0
-vendor.usb.use_gadget_hal=0
 
 # ZRAM writeback
 ro.zram.mark_idle_delay_mins=60
