@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2022 Project 404
+# Copyright (C) 2024 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -121,7 +122,6 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
 KERNEL_DEFCONFIG := cmi_defconfig
 
 # Metadata
