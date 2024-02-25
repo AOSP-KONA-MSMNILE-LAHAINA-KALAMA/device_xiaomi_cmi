@@ -227,6 +227,7 @@ PRODUCT_PACKAGES += \
     CmiSystemUI \
     FrameworksResTarget \
     SettingsResCommon \
+    SystemUIResCommon \
     WifiResTarget
 
 # Partitions
