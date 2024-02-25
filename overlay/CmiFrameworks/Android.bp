@@ -5,5 +5,6 @@
 
 runtime_resource_overlay {
     name: "CmiFrameworks",
-    vendor: true,
+    sdk_version: "current",
+    product_specific: true,
 }
