@@ -81,10 +81,6 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
-# Atrace
-PRODUCT_PACKAGES += \
-    android.hardware.atrace@1.0-service
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
