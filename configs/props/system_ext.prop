@@ -1,3 +1,7 @@
+# Doze
+ro.sensor.pickup=xiaomi.sensor.pickup
+ro.sensor.pickup.lower.value=2
+
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 persist.sys.gps.fence=true
