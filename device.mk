@@ -223,9 +223,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     AOSPACmiFrameworks \
     AOSPACmiSystemUI \
-    FrameworksResTarget \
     CmiFrameworks \
     CmiSystemUI \
+    FrameworksResTarget \
+    SettingsResCommon \
     WifiResTarget
 
 # Partitions
